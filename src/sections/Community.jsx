@@ -1,7 +1,8 @@
 import { Award, Cloud, Globe } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
 
 import FadeInSection from '../components/FadeInSection';
+import useMountedTranslation from '../hooks/useMountedTranslation';
+import en from '../locales/en.json';
 
 const cardStyles = [
   {
@@ -25,16 +26,16 @@ const cardStyles = [
 ];
 
 const Community = () => {
-  const { t } = useTranslation();
-  const cards = t('community.cards', { returnObjects: true });
+  const { mt } = useMountedTranslation();
+  const cards = mt('community.cards', en.community.cards, { returnObjects: true });
 
   return (
     <section id="comunidade" className="relative z-10 py-32 px-6 bg-white/[0.01] border-y border-white/5">
       <div className="max-w-6xl mx-auto">
         <FadeInSection>
           <div className="mb-16 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{t('community.title')}</h2>
-            <p className="text-white/50 max-w-2xl mx-auto text-sm md:text-base">{t('community.description')}</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{mt('community.title', en.community.title)}</h2>
+            <p className="text-white/50 max-w-2xl mx-auto text-sm md:text-base">{mt('community.description', en.community.description)}</p>
           </div>
         </FadeInSection>
 

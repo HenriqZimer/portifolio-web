@@ -1,11 +1,12 @@
 import Image from 'next/image';
 import { ChevronDown, FolderGit2, Rocket } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
 
 import FadeInSection from '../components/FadeInSection';
+import useMountedTranslation from '../hooks/useMountedTranslation';
+import en from '../locales/en.json';
 
 const Hero = () => {
-  const { t } = useTranslation();
+  const { mt } = useMountedTranslation();
 
   return (
     <section className="relative z-10 min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
@@ -17,8 +18,8 @@ const Hero = () => {
 
           <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full p-1.5 bg-gradient-to-b from-blue-400/30 to-transparent backdrop-blur-sm z-10 group-hover:scale-105 transition-transform duration-500 shadow-[0_0_30px_rgba(59,130,246,0.2)]">
             <Image
-              src="https://github.com/HenriqZimer.png"
-              alt={t('hero.photoAlt')}
+              src="https://henriqzimer.s3.sa-east-1.amazonaws.com/foto-perfil.jpg"
+              alt={mt('hero.photoAlt', en.hero.photoAlt)}
               width={160}
               height={160}
               sizes="(max-width: 768px) 128px, 160px"
@@ -34,38 +35,41 @@ const Hero = () => {
       <FadeInSection delay={200}>
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/70 text-xs font-mono mb-8 backdrop-blur-sm hover:bg-white/10 transition-colors cursor-default">
           <span className="w-2 h-2 rounded-full bg-[#FF9900] animate-pulse" />
-          {t('hero.badge')}
+          {mt('hero.badge', en.hero.badge)}
         </div>
       </FadeInSection>
 
       <FadeInSection delay={300}>
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight max-w-4xl">
-          {t('hero.titlePrefix')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500">{t('hero.titleName')}</span>.
+          {mt('hero.titlePrefix', en.hero.titlePrefix)}{' '}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500">{mt('hero.titleName', en.hero.titleName)}</span>.
         </h1>
       </FadeInSection>
 
       <FadeInSection delay={400}>
         <p className="text-lg md:text-xl text-white/60 max-w-2xl mb-10 font-light">
-          {t('hero.descriptionBefore')} <strong className="text-white/90">{t('hero.descriptionStrong')}</strong>. {t('hero.descriptionAfter')}
+          {mt('hero.descriptionBefore', en.hero.descriptionBefore)}{' '}
+          <strong className="text-white/90">{mt('hero.descriptionStrong', en.hero.descriptionStrong)}</strong>.{' '}
+          {mt('hero.descriptionAfter', en.hero.descriptionAfter)}
         </p>
       </FadeInSection>
 
       <FadeInSection delay={500}>
         <div className="flex flex-col sm:flex-row gap-4">
           <a href="#experiencia" className="px-8 py-3 rounded-lg bg-white text-black font-medium hover:bg-gray-200 transition-colors duration-300 text-sm hover:scale-105 active:scale-95">
-            {t('hero.ctaHighlights')}
+            {mt('hero.ctaHighlights', en.hero.ctaHighlights)}
           </a>
-          <a href="https://github.com/HenriqZimer" target="_blank" rel="noopener noreferrer" className="px-8 py-3 rounded-lg bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-all duration-300 backdrop-blur-sm text-sm flex items-center justify-center gap-2 hover:scale-105 active:scale-95 hover:border-blue-500/50" aria-label={t('hero.ctaGithub')}>
-            <FolderGit2 className="w-4 h-4 group-hover:text-blue-400" /> {t('hero.ctaGithub')}
+          <a href="https://github.com/HenriqZimer" target="_blank" rel="noopener noreferrer" className="px-8 py-3 rounded-lg bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-all duration-300 backdrop-blur-sm text-sm flex items-center justify-center gap-2 hover:scale-105 active:scale-95 hover:border-blue-500/50" aria-label={mt('hero.ctaGithub', en.hero.ctaGithub)}>
+            <FolderGit2 className="w-4 h-4 group-hover:text-blue-400" /> {mt('hero.ctaGithub', en.hero.ctaGithub)}
           </a>
-          <a href="#contacto" className="px-8 py-3 rounded-lg bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-all duration-300 backdrop-blur-sm text-sm hover:scale-105 active:scale-95" aria-label={t('hero.ctaContact')}>
-            {t('hero.ctaContact')}
+          <a href="#contacto" className="px-8 py-3 rounded-lg bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-all duration-300 backdrop-blur-sm text-sm hover:scale-105 active:scale-95" aria-label={mt('hero.ctaContact', en.hero.ctaContact)}>
+            {mt('hero.ctaContact', en.hero.ctaContact)}
           </a>
         </div>
       </FadeInSection>
 
       <div className="absolute bottom-10 animate-bounce text-white/30 hover:text-white transition-colors cursor-pointer">
-        <a href="#skills" aria-label={t('nav.links.skills')}>
+        <a href="#skills" aria-label={mt('nav.links.skills', en.nav.links.skills)}>
           <ChevronDown className="w-6 h-6" />
         </a>
       </div>

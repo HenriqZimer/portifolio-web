@@ -1,9 +1,10 @@
 import Image from 'next/image';
 import { Award } from 'lucide-react';
 import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
 
 import FadeInSection from '../components/FadeInSection';
+import useMountedTranslation from '../hooks/useMountedTranslation';
+import en from '../locales/en.json';
 
 const certAssets = [
   {
@@ -25,8 +26,8 @@ const certAssets = [
 ];
 
 const Certifications = () => {
-  const { t } = useTranslation();
-  const certs = t('certifications.items', { returnObjects: true });
+  const { mt } = useMountedTranslation();
+  const certs = mt('certifications.items', en.certifications.items, { returnObjects: true });
   const [brokenBadges, setBrokenBadges] = useState([]);
 
   const handleBadgeError = (index) => {
@@ -37,8 +38,8 @@ const Certifications = () => {
     <section id="certificacoes" className="relative z-10 py-20 px-6 max-w-6xl mx-auto">
       <FadeInSection>
         <div className="mb-16 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{t('certifications.title')}</h2>
-          <p className="text-white/50 max-w-2xl mx-auto text-sm md:text-base">{t('certifications.description')}</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{mt('certifications.title', en.certifications.title)}</h2>
+          <p className="text-white/50 max-w-2xl mx-auto text-sm md:text-base">{mt('certifications.description', en.certifications.description)}</p>
         </div>
       </FadeInSection>
 
@@ -56,7 +57,7 @@ const Certifications = () => {
                 {!brokenBadges.includes(idx) ? (
                   <Image
                     src={certAssets[idx].badgeUrl}
-                    alt={t('certifications.badgeAlt', { code: cert.code, title: cert.title })}
+                    alt={mt('certifications.badgeAlt', en.certifications.badgeAlt, { code: cert.code, title: cert.title })}
                     width={128}
                     height={128}
                     sizes="128px"

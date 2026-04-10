@@ -1,11 +1,12 @@
 import { ExternalLink, FolderGit2, Terminal } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
 
 import FadeInSection from '../components/FadeInSection';
+import useMountedTranslation from '../hooks/useMountedTranslation';
+import en from '../locales/en.json';
 
 const Projects = () => {
-  const { t } = useTranslation();
-  const projectList = t('projects.items', { returnObjects: true });
+  const { mt } = useMountedTranslation();
+  const projectList = mt('projects.items', en.projects.items, { returnObjects: true });
 
   return (
     <section id="projetos" className="relative z-10 py-32 px-6 max-w-6xl mx-auto">
@@ -13,9 +14,9 @@ const Projects = () => {
         <div className="mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 flex items-center gap-3">
             <FolderGit2 className="w-8 h-8 text-blue-400" />
-            {t('projects.title')}
+            {mt('projects.title', en.projects.title)}
           </h2>
-          <p className="text-white/50 max-w-xl text-sm md:text-base">{t('projects.description')}</p>
+          <p className="text-white/50 max-w-xl text-sm md:text-base">{mt('projects.description', en.projects.description)}</p>
         </div>
       </FadeInSection>
 

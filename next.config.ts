@@ -14,7 +14,7 @@ const cspHeader = `
 `;
 
 const nextConfig: NextConfig = {
-  // 1. Configuração de Imagens (Essencial para Cloudflare)
+  // 1. Otimização de Imagens
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -23,40 +23,40 @@ const nextConfig: NextConfig = {
     ],
   },
 
-  // 2. Output Standalone (Obrigatório para o adaptador OpenNext/Cloudflare)
+  // 2. Output para Cloudflare
   output: "standalone",
 
-  // 3. Headers de Segurança (A alma do DevSecOps)
-  headers: async () => [
-    {
-      source: "/(.*)",
-      headers: [
-        {
-          key: "Content-Security-Policy",
-          value: cspHeader.replace(/\s{2,}/g, " ").trim(),
-        },
-        { key: "X-Content-Type-Options", value: "nosniff" },
-        { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
-        { key: "X-Frame-Options", value: "DENY" },
-        {
-          key: "Strict-Transport-Security",
-          value: "max-age=31536000; includeSubDomains; preload",
-        },
-        {
-          key: "Permissions-Policy",
-          value: "camera=(), microphone=(), geolocation=()",
-        },
-      ],
-    },
-  ],
+  // 3. NOVIDADE NEXT 16: serverExternalPackages agora é top-level (saiu de experimental)
+  serverExternalPackages: ["@cloudflare/workers-types"],
 
-  // 4. Otimizações de Runtime
-  experimental: {
-    // Garante que pacotes externos não quebrem o ambiente de Worker
-    serverComponentsExternalPackages: ["@cloudflare/workers-types"],
+  // 4. Headers de Segurança
+  async headers() {
+    return [
+      {
+        source: "/(.*)",
+        headers: [
+          {
+            key: "Content-Security-Policy",
+            value: cspHeader.replace(/\s{2,}/g, " ").trim(),
+          },
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+          { key: "X-Frame-Options", value: "DENY" },
+          {
+            key: "Strict-Transport-Security",
+            value: "max-age=31536000; includeSubDomains; preload",
+          },
+          {
+            key: "Permissions-Policy",
+            value: "camera=(), microphone=(), geolocation=()",
+          },
+        ],
+      },
+    ];
   },
+
+  // Mantemos o experimental apenas se houver algo novo lá, por enquanto está limpo
+  experimental: {},
 };
 
 export default nextConfig;
-
-import('@opennextjs/cloudflare').then(m => m.initOpenNextCloudflareForDev());

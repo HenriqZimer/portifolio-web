@@ -1,11 +1,12 @@
 import { Languages as LangIcon } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
 
 import FadeInSection from '../components/FadeInSection';
+import useMountedTranslation from '../hooks/useMountedTranslation';
+import en from '../locales/en.json';
 
 const Languages = () => {
-  const { t } = useTranslation();
-  const items = t('languages.items', { returnObjects: true });
+  const { mt } = useMountedTranslation();
+  const items = mt('languages.items', en.languages.items, { returnObjects: true });
 
   return (
     <section className="relative z-10 py-20 px-6 max-w-4xl mx-auto">
@@ -14,8 +15,8 @@ const Languages = () => {
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-500/10 mb-6 shadow-[0_0_15px_rgba(59,130,246,0.1)]">
             <LangIcon className="w-8 h-8 text-blue-400" />
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{t('languages.title')}</h2>
-          <p className="text-white/50 text-sm md:text-base">{t('languages.description')}</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{mt('languages.title', en.languages.title)}</h2>
+          <p className="text-white/50 text-sm md:text-base">{mt('languages.description', en.languages.description)}</p>
         </div>
       </FadeInSection>
 

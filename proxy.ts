@@ -6,7 +6,7 @@ import { resolveLocale } from './src/lib/locale';
 const COOKIE_NAME = 'i18next';
 const ONE_YEAR = 60 * 60 * 24 * 365;
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const cookieLocale = request.cookies.get(COOKIE_NAME)?.value;
   const acceptLanguage = request.headers.get('accept-language');
   const locale = resolveLocale({ cookieLocale, acceptLanguage });
@@ -19,6 +19,8 @@ export function middleware(request: NextRequest) {
       headers: requestHeaders,
     },
   });
+
+  response.headers.set('x-locale', locale);
 
   if (cookieLocale !== locale) {
     response.cookies.set(COOKIE_NAME, locale, {
