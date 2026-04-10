@@ -4,7 +4,7 @@ const cspHeader = `
     default-src 'self';
     script-src 'self' 'unsafe-eval' 'unsafe-inline' https://static.cloudflareinsights.com;
     style-src 'self' 'unsafe-inline';
-    img-src 'self' blob: data: https://github.com https://images.credly.com;
+  img-src 'self' blob: data: https://github.com https://images.credly.com https://henriqzimer.s3.sa-east-1.amazonaws.com;
     font-src 'self';
     object-src 'none';
     base-uri 'self';
@@ -20,6 +20,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       { protocol: "https", hostname: "github.com" },
       { protocol: "https", hostname: "images.credly.com" },
+      { protocol: "https", hostname: "henriqzimer.s3.sa-east-1.amazonaws.com" },
     ],
   },
 

@@ -21,6 +21,7 @@
     }
   },
   "hero": {
+    "image": "https://henriqzimer.s3.sa-east-1.amazonaws.com/foto-perfil.jpg",
     "badge": "AWS Cloud Club Captain @ Univali",
     "titlePrefix": "Hi, my name is",
     "titleName": "Henrique",

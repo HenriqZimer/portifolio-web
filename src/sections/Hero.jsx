@@ -6,7 +6,9 @@ import useMountedTranslation from '../hooks/useMountedTranslation';
 import en from '../locales/en.json';
 
 const Hero = () => {
-  const { mt } = useMountedTranslation();
+  const { mt, isMounted } = useMountedTranslation();
+  const defaultHeroImage = 'https://henriqzimer.s3.sa-east-1.amazonaws.com/foto-perfil.jpg';
+  const heroImageSrc = isMounted ? mt('hero.image', defaultHeroImage) : defaultHeroImage;
 
   return (
     <section className="relative z-10 min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
@@ -18,10 +20,12 @@ const Hero = () => {
 
           <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full p-1.5 bg-gradient-to-b from-blue-400/30 to-transparent backdrop-blur-sm z-10 group-hover:scale-105 transition-transform duration-500 shadow-[0_0_30px_rgba(59,130,246,0.2)]">
             <Image
-              src="https://henriqzimer.s3.sa-east-1.amazonaws.com/foto-perfil.jpg"
+              src={heroImageSrc}
               alt={mt('hero.photoAlt', en.hero.photoAlt)}
               width={160}
               height={160}
+              priority
+              unoptimized
               sizes="(max-width: 768px) 128px, 160px"
               className="w-full h-full object-cover rounded-full border border-blue-900/50"
             />
