@@ -1,7 +1,7 @@
 import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
 
-import { resolveLocale } from './src/lib/locale';
+import { resolveLocale } from './lib/locale';
 
 const COOKIE_NAME = 'i18next';
 const ONE_YEAR = 60 * 60 * 24 * 365;
