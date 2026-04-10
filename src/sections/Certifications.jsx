@@ -1,4 +1,6 @@
+import Image from 'next/image';
 import { Award } from 'lucide-react';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import FadeInSection from '../components/FadeInSection';
@@ -25,6 +27,11 @@ const certAssets = [
 const Certifications = () => {
   const { t } = useTranslation();
   const certs = t('certifications.items', { returnObjects: true });
+  const [brokenBadges, setBrokenBadges] = useState([]);
+
+  const handleBadgeError = (index) => {
+    setBrokenBadges((prev) => (prev.includes(index) ? prev : [...prev, index]));
+  };
 
   return (
     <section id="certificacoes" className="relative z-10 py-20 px-6 max-w-6xl mx-auto">
@@ -46,20 +53,21 @@ const Certifications = () => {
             >
               <div className="w-32 h-32 mb-6 relative flex items-center justify-center">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <img
-                  src={certAssets[idx].badgeUrl}
-                  alt={t('certifications.badgeAlt', { code: cert.code })}
-                  className="w-full h-full object-contain relative z-10 group-hover:scale-105 transition-transform duration-500 drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                    if (e.currentTarget.nextElementSibling) {
-                      e.currentTarget.nextElementSibling.style.display = 'flex';
-                    }
-                  }}
-                />
-                <div className="hidden w-24 h-24 rounded-full bg-white/5 border border-white/10 items-center justify-center relative z-10">
-                  <Award className="w-10 h-10 text-blue-400" />
-                </div>
+                {!brokenBadges.includes(idx) ? (
+                  <Image
+                    src={certAssets[idx].badgeUrl}
+                    alt={t('certifications.badgeAlt', { code: cert.code })}
+                    width={128}
+                    height={128}
+                    sizes="128px"
+                    className="w-full h-full object-contain relative z-10 group-hover:scale-105 transition-transform duration-500 drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]"
+                    onError={() => handleBadgeError(idx)}
+                  />
+                ) : (
+                  <div className="flex w-24 h-24 rounded-full bg-white/5 border border-white/10 items-center justify-center relative z-10">
+                    <Award className="w-10 h-10 text-blue-400" />
+                  </div>
+                )}
               </div>
               <h3 className="text-center text-white/90 font-semibold text-sm mb-2 h-10 flex items-center justify-center">{cert.title}</h3>
               <span className="px-3 py-1 rounded-full bg-white/5 text-blue-400 text-xs font-mono border border-white/10 group-hover:bg-blue-500/10 transition-colors">
