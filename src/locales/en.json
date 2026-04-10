@@ -1,0 +1,179 @@
+{
+  "nav": {
+    "brand": "HENRIQZIMER",
+    "links": {
+      "home": "Home",
+      "skills": "Skills",
+      "certs": "Certs",
+      "projects": "Projects",
+      "community": "Community",
+      "contact": "Contact"
+    },
+    "language": {
+      "switch": "Switch language",
+      "pt": "PT",
+      "en": "EN"
+    }
+  },
+  "hero": {
+    "badge": "AWS Cloud Club Captain @ Univali",
+    "titlePrefix": "Hi, my name is",
+    "titleName": "Henrique",
+    "descriptionBefore": "Computer Science student and infrastructure professional focused on",
+    "descriptionStrong": "DevSecOps and SRE",
+    "descriptionAfter": "My goal is to apply container orchestration and Cloud Native concepts to build secure, scalable, and resilient architectures.",
+    "ctaHighlights": "View Highlights",
+    "ctaGithub": "GitHub",
+    "ctaContact": "Start Contact",
+    "photoAlt": "Photo of Henrique Zimermann"
+  },
+  "skills": {
+    "title": "Tech Stack",
+    "description": "The tools and platforms I use to deliver the best possible performance for the business.",
+    "cards": {
+      "cloud": {
+        "title": "Cloud Computing",
+        "items": ["AWS", "Microsoft Azure", "Google Cloud (GCP)", "Oracle Cloud (OCI)"]
+      },
+      "containers": {
+        "title": "Containers and IaC",
+        "items": ["Docker and Docker Swarm", "Kubernetes", "Helm", "Terraform"]
+      },
+      "observability": {
+        "title": "Observability and SRE",
+        "items": ["Prometheus", "Grafana", "Proactive Monitoring", "SLIs/SLOs"]
+      },
+      "os": {
+        "title": "OS and Scripting",
+        "items": ["Linux", "Windows Server", "PowerShell", "Bash"]
+      },
+      "cicd": {
+        "title": "CI/CD and Automation",
+        "items": ["CI/CD Pipelines", "Manual Task Automation", "Ansible"]
+      },
+      "security": {
+        "title": "Networking and Security",
+        "items": ["Cloudflare Zero Trust", "On-premise Environments", "High Availability"]
+      }
+    }
+  },
+  "certifications": {
+    "title": "Official Certifications",
+    "description": "Official validation of my skills across the top cloud providers in the market.",
+    "items": [
+      {
+        "title": "AWS Certified Cloud Practitioner",
+        "code": "CLF-C02"
+      },
+      {
+        "title": "Microsoft Certified: Azure Fundamentals",
+        "code": "AZ-900"
+      },
+      {
+        "title": "Google Cloud: Associate Cloud Engineer",
+        "code": "ACE"
+      },
+      {
+        "title": "Oracle Cloud Infrastructure Foundations",
+        "code": "OCI"
+      }
+    ],
+    "badgeAlt": "Badge image {{code}}"
+  },
+  "projects": {
+    "title": "Hands-on Projects",
+    "description": "Architectures, automations, and open code I built to solve real infrastructure problems.",
+    "items": [
+      {
+        "title": "Serverless CI/CD Pipeline",
+        "description": "Built a continuous integration and delivery (CI/CD) pipeline using GitHub Actions, automating deployments to AWS services.",
+        "tags": ["AWS", "GitHub Actions", "Docker"]
+      },
+      {
+        "title": "Infrastructure as Code (IaC)",
+        "description": "Automated cloud infrastructure provisioning with Terraform and server setup using Ansible scripts for standardization.",
+        "tags": ["Terraform", "Ansible", "Cloud"]
+      },
+      {
+        "title": "SRE Observability Stack",
+        "description": "Implemented proactive monitoring for applications and infrastructure with Prometheus and Grafana, focused on defining SLIs and SLOs.",
+        "tags": ["Prometheus", "Grafana", "Linux"]
+      }
+    ]
+  },
+  "community": {
+    "title": "Community and Leadership",
+    "description": "I believe in knowledge sharing and the power of communities. I actively help empower the next generation of cloud professionals.",
+    "cards": [
+      {
+        "title": "Cloud Club Founder",
+        "description": "Founder of the 1st AWS Cloud Club in Southern Brazil at Univali. I organize events and support the student community in their cloud journey."
+      },
+      {
+        "title": "AWS Builder Leader",
+        "description": "Official leadership recognition in the AWS Builder Students program, engaging talent and promoting a culture of technological innovation."
+      },
+      {
+        "title": "Tech Events",
+        "description": "Active participation in major events and communities, including The Developer's Conference (TDC), DevOps Days, and AWS User Groups."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Journey and Highlights",
+    "description": "My education, professional experience, and community involvement.",
+    "items": [
+      {
+        "year": "Present",
+        "title": "AWS Cloud Club Captain and Student Leader Builder",
+        "company": "Univali",
+        "description": "I serve as captain of Cloud Club Univali and as a student leader at Univali, managing the local academic community, fostering cloud culture, and organizing practical mentoring on Cloud Computing."
+      },
+      {
+        "year": "Current",
+        "title": "DevSecOps",
+        "company": "Fluid API",
+        "description": "Continuous security integration in the API development lifecycle. Focused on infrastructure automation, secure CI/CD pipeline management, and Cloud Native practices to ensure high availability and cloud security."
+      },
+      {
+        "year": "Education",
+        "title": "Computer Science",
+        "company": "University of Vale do Itajai (UNIVALI)",
+        "description": "Computer Science student deepening knowledge in systems architecture, algorithms, and software engineering."
+      },
+      {
+        "year": "Automation",
+        "title": "Infrastructure and Efficiency Projects",
+        "company": "Hands-on Projects",
+        "description": "Developed projects focused on Docker Swarm, Cloudflare Zero Trust, and advanced PowerShell and Bash scripting to reduce manual operational tasks."
+      }
+    ]
+  },
+  "languages": {
+    "title": "Languages and Communication",
+    "description": "Operational capacity for global collaboration and native documentation consumption.",
+    "items": [
+      {
+        "code": "PT",
+        "name": "Portuguese",
+        "level": "Native"
+      },
+      {
+        "code": "EN",
+        "name": "English",
+        "level": "Advanced / Technical"
+      }
+    ]
+  },
+  "footer": {
+    "title": "Ready to collaborate?",
+    "description": "Always open to expanding my network, discussing Cloud Native architectures, or exchanging ideas about DevSecOps and scalable infrastructure. Let's connect!",
+    "links": {
+      "email": "Email",
+      "portfolio": "Web Portfolio",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    },
+    "copyright": "All rights reserved."
+  }
+}
