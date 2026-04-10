@@ -24,13 +24,10 @@ const nextConfig: NextConfig = {
     ],
   },
 
-  // 2. Output para Cloudflare
-  output: "standalone",
-
-  // 3. NOVIDADE NEXT 16: serverExternalPackages agora é top-level (saiu de experimental)
+  // 2. NOVIDADE NEXT 16: serverExternalPackages agora é top-level (saiu de experimental)
   serverExternalPackages: ["@cloudflare/workers-types"],
 
-  // 4. Headers de Segurança
+  // 3. Headers de Segurança
   async headers() {
     return [
       {

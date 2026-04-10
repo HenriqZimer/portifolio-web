@@ -6,7 +6,7 @@ import { resolveLocale } from './lib/locale';
 const COOKIE_NAME = 'i18next';
 const ONE_YEAR = 60 * 60 * 24 * 365;
 
-export function proxy(request: NextRequest) {
+export function middleware(request: NextRequest) {
   const cookieLocale = request.cookies.get(COOKIE_NAME)?.value;
   const acceptLanguage = request.headers.get('accept-language');
   const locale = resolveLocale({ cookieLocale, acceptLanguage });
