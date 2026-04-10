@@ -8,6 +8,7 @@ const Nav = () => {
 
   const handleLanguageToggle = () => {
     i18n.changeLanguage(nextLang);
+    document.cookie = `i18next=${nextLang}; path=/; max-age=31536000; samesite=lax`;
   };
 
   return (

@@ -56,7 +56,7 @@ const Certifications = () => {
                 {!brokenBadges.includes(idx) ? (
                   <Image
                     src={certAssets[idx].badgeUrl}
-                    alt={t('certifications.badgeAlt', { code: cert.code })}
+                    alt={t('certifications.badgeAlt', { code: cert.code, title: cert.title })}
                     width={128}
                     height={128}
                     sizes="128px"

@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const isWorkerBuild = process.env.CF_BUILD_MODE === "worker";
+const isStaticMode = process.env.CF_BUILD_MODE === "static";
 
 const nextConfig: NextConfig = {
   images: {
@@ -16,7 +16,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  ...(isWorkerBuild ? {} : { output: "export" }),
+  ...(isStaticMode ? { output: "export" } : {}),
 };
 
 export default nextConfig;

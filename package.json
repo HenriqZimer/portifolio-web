@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:static": "next build",
+    "build:static": "CF_BUILD_MODE=static next build",
     "build:cf:worker": "CF_BUILD_MODE=worker next build && npx @cloudflare/next-on-pages@latest --skip-build",
     "deploy:cf:static": "wrangler pages deploy out",
     "preview:cf:static": "wrangler pages dev out",

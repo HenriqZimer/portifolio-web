@@ -1,4 +1,9 @@
 {
+  "seo": {
+    "specialty": "DevSecOps e SRE",
+    "description": "Henrique Zimermann, profissional focado em DevSecOps e SRE, com experiencia em Cloud, automacao de infraestrutura, observabilidade e arquiteturas resilientes.",
+    "keywords": ["Cloud", "DevSecOps", "SRE", "AWS", "Kubernetes", "Terraform", "Observabilidade"]
+  },
   "nav": {
     "brand": "HENRIQZIMER",
     "links": {
@@ -78,7 +83,7 @@
         "code": "OCI"
       }
     ],
-    "badgeAlt": "Imagem de Badge {{code}}"
+    "badgeAlt": "Badge da certificacao {{title}} ({{code}})"
   },
   "projects": {
     "title": "Projetos Praticos",

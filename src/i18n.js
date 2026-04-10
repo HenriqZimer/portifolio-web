@@ -20,8 +20,14 @@ if (!i18n.isInitialized) {
         escapeValue: false
       },
       detection: {
-        order: ['localStorage', 'navigator', 'htmlTag'],
-        caches: ['localStorage']
+        order: ['cookie', 'localStorage', 'navigator', 'htmlTag'],
+        caches: ['localStorage', 'cookie'],
+        cookieMinutes: 525600,
+        cookieDomain: undefined,
+        cookieOptions: {
+          path: '/',
+          sameSite: 'lax'
+        }
       }
     });
 }

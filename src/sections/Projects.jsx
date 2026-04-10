@@ -27,7 +27,7 @@ const Projects = () => {
                 <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <Terminal className="w-5 h-5 text-blue-400" />
                 </div>
-                <a href="https://github.com/HenriqZimer" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white transition-colors">
+                <a href="https://github.com/HenriqZimer" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white transition-colors" aria-label="Abrir projeto no GitHub">
                   <ExternalLink className="w-5 h-5 group-hover:text-blue-400 transition-colors" />
                 </a>
               </div>

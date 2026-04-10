@@ -17,22 +17,22 @@ const Footer = () => {
 
         <div className="flex gap-4 mb-16">
           <FadeInSection delay={100}>
-            <a href="mailto:henrique.zimermann@outlook.com" className="w-12 h-12 rounded-full bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-300 hover:text-white hover:bg-blue-500/30 hover:border-blue-400/50 hover:-translate-y-2 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] transition-all duration-300" title={t('footer.links.email')}>
+            <a href="mailto:henrique.zimermann@outlook.com" className="w-12 h-12 rounded-full bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-300 hover:text-white hover:bg-blue-500/30 hover:border-blue-400/50 hover:-translate-y-2 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] transition-all duration-300" title={t('footer.links.email')} aria-label={t('footer.links.email')}>
               <Mail className="w-5 h-5" />
             </a>
           </FadeInSection>
           <FadeInSection delay={200}>
-            <a href="https://henriqzimer.com.br" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-300 hover:text-white hover:bg-blue-500/30 hover:border-blue-400/50 hover:-translate-y-2 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] transition-all duration-300" title={t('footer.links.portfolio')}>
+            <a href="https://henriqzimer.com.br" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-300 hover:text-white hover:bg-blue-500/30 hover:border-blue-400/50 hover:-translate-y-2 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] transition-all duration-300" title={t('footer.links.portfolio')} aria-label={t('footer.links.portfolio')}>
               <Globe className="w-5 h-5" />
             </a>
           </FadeInSection>
           <FadeInSection delay={300}>
-            <a href="https://github.com/HenriqZimer" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-300 hover:text-white hover:bg-blue-500/30 hover:border-blue-400/50 hover:-translate-y-2 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] transition-all duration-300" title={t('footer.links.github')}>
+            <a href="https://github.com/HenriqZimer" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-300 hover:text-white hover:bg-blue-500/30 hover:border-blue-400/50 hover:-translate-y-2 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] transition-all duration-300" title={t('footer.links.github')} aria-label={t('footer.links.github')}>
               <FolderGit2 className="w-5 h-5" />
             </a>
           </FadeInSection>
           <FadeInSection delay={400}>
-            <a href="https://linkedin.com/in/henrique-zimermann" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-300 hover:text-white hover:bg-blue-500/30 hover:border-blue-400/50 hover:-translate-y-2 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] transition-all duration-300" title={t('footer.links.linkedin')}>
+            <a href="https://linkedin.com/in/henrique-zimermann" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-300 hover:text-white hover:bg-blue-500/30 hover:border-blue-400/50 hover:-translate-y-2 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] transition-all duration-300" title={t('footer.links.linkedin')} aria-label={t('footer.links.linkedin')}>
               <Link2 className="w-5 h-5" />
             </a>
           </FadeInSection>

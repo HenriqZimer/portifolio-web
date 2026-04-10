@@ -55,10 +55,10 @@ const Hero = () => {
           <a href="#experiencia" className="px-8 py-3 rounded-lg bg-white text-black font-medium hover:bg-gray-200 transition-colors duration-300 text-sm hover:scale-105 active:scale-95">
             {t('hero.ctaHighlights')}
           </a>
-          <a href="https://github.com/HenriqZimer" target="_blank" rel="noopener noreferrer" className="px-8 py-3 rounded-lg bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-all duration-300 backdrop-blur-sm text-sm flex items-center justify-center gap-2 hover:scale-105 active:scale-95 hover:border-blue-500/50">
+          <a href="https://github.com/HenriqZimer" target="_blank" rel="noopener noreferrer" className="px-8 py-3 rounded-lg bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-all duration-300 backdrop-blur-sm text-sm flex items-center justify-center gap-2 hover:scale-105 active:scale-95 hover:border-blue-500/50" aria-label={t('hero.ctaGithub')}>
             <FolderGit2 className="w-4 h-4 group-hover:text-blue-400" /> {t('hero.ctaGithub')}
           </a>
-          <a href="#contacto" className="px-8 py-3 rounded-lg bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-all duration-300 backdrop-blur-sm text-sm hover:scale-105 active:scale-95">
+          <a href="#contacto" className="px-8 py-3 rounded-lg bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-all duration-300 backdrop-blur-sm text-sm hover:scale-105 active:scale-95" aria-label={t('hero.ctaContact')}>
             {t('hero.ctaContact')}
           </a>
         </div>
