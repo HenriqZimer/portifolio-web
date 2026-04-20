@@ -35,37 +35,37 @@
   },
   "skills": {
     "title": "Tech Stack",
-    "description": "As ferramentas e plataformas que utilizo para entregar o melhor desempenho possivel para o negocio.",
+    "description": "As ferramentas e plataformas que utilizo para entregar o melhor desempenho possível para o negócio.",
     "cards": {
       "cloud": {
         "title": "Cloud Computing",
         "items": ["AWS", "Microsoft Azure", "Google Cloud (GCP)", "Oracle Cloud (OCI)"]
       },
       "containers": {
-        "title": "Containerizacao e IaC",
+        "title": "Containerização e IaC",
         "items": ["Docker e Docker Swarm", "Kubernetes", "Helm", "Terraform"]
       },
       "observability": {
         "title": "Observabilidade e SRE",
-        "items": ["Prometheus", "Grafana", "Monitorizacao Proativa", "SLIs/SLOs"]
+        "items": ["Prometheus", "Grafana", "Monitorização Proativa", "SLIs/SLOs"]
       },
       "os": {
         "title": "OS e Scripting",
         "items": ["Linux", "Windows Server", "PowerShell", "Bash"]
       },
       "cicd": {
-        "title": "CI/CD e Automacao",
-        "items": ["Pipelines de CI/CD", "Automacao de Tarefas Manuais", "Ansible"]
+        "title": "CI/CD e Automação",
+        "items": ["Pipelines de CI/CD", "Automação de Tarefas Manuais", "Ansible"]
       },
       "security": {
-        "title": "Redes e Seguranca",
+        "title": "Redes e Segurança",
         "items": ["Cloudflare Zero Trust", "Ambientes On-premise", "Alta Disponibilidade"]
       }
     }
   },
   "certifications": {
-    "title": "Certificacoes Oficiais",
-    "description": "Validacoes oficiais das minhas competencias nos principais provedores de nuvem do mercado.",
+    "title": "Certificações Oficiais",
+    "description": "Validações oficiais das minhas competências nos principais provedores de nuvem do mercado.",
     "items": [
       {
         "title": "AWS Certified Cloud Practitioner",
@@ -116,7 +116,7 @@
         "description": "Fundador do 1o AWS Cloud Club do Sul do Brasil na Univali. Organizo eventos e capacito a comunidade estudantil na sua jornada para a nuvem."
       },
       {
-        "title": "Líder Builder AWS",
+        "title": "Líder Estudantil Builder AWS",
         "description": "Liderança oficial reconhecida no programa Estudantes Builder AWS, engajando talentos e promovendo a cultura de inovação tecnológica."
       },
       {
@@ -126,7 +126,7 @@
     ]
   },
   "experience": {
-    "title": "Trajetoria e Destaques",
+    "title": "Trajetória e Destaques",
     "description": "Minha formacao, experiências profissionais e atuação na comunidade.",
     "items": [
       {
@@ -150,13 +150,13 @@
       {
         "year": "Automação",
         "title": "Projetos de Infraestrutura e Eficiência",
-        "company": "Projetos Praticos",
+        "company": "Projetos Práticos",
         "description": "Desenvolvimento de projetos focados em Docker Swarm, Cloudflare Zero Trust e criação de scripts avançados em PowerShell e Bash para reduzir tarefas manuais operacionais."
       }
     ]
   },
   "languages": {
-    "title": "Idiomas e Comunicacao",
+    "title": "Idiomas e Comunicação",
     "description": "Capacidade operacional para colaboração global e consumo nativo de documentação.",
     "items": [
       {
@@ -178,7 +178,10 @@
       "email": "Email",
       "portfolio": "Portfolio Web",
       "github": "GitHub",
-      "linkedin": "LinkedIn"
+      "linkedin": "LinkedIn",
+      "youtube": "YouTube",
+      "instagram": "Instagram",
+      "awsBuilder": "AWS Builder"
     },
     "copyright": "Todos os direitos reservados."
   }

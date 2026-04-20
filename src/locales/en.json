@@ -22,7 +22,7 @@
   },
   "hero": {
     "image": "https://henriqzimer.s3.sa-east-1.amazonaws.com/foto-perfil.jpg",
-    "badge": "AWS Cloud Club Captain @ Univali",
+    "badge": "AWS Cloud Club Captain - Univali",
     "titlePrefix": "Hi, my name is",
     "titleName": "Henrique",
     "descriptionBefore": "Computer Science student and infrastructure professional focused on",
@@ -112,11 +112,11 @@
     "description": "I believe in knowledge sharing and the power of communities. I actively help empower the next generation of cloud professionals.",
     "cards": [
       {
-        "title": "Cloud Club Founder",
+        "title": "AWS Cloud Club Founder",
         "description": "Founder of the 1st AWS Cloud Club in Southern Brazil at Univali. I organize events and support the student community in their cloud journey."
       },
       {
-        "title": "AWS Builder Leader",
+        "title": "AWS Student Builder Leader",
         "description": "Official leadership recognition in the AWS Builder Students program, engaging talent and promoting a culture of technological innovation."
       },
       {
@@ -178,7 +178,10 @@
       "email": "Email",
       "portfolio": "Web Portfolio",
       "github": "GitHub",
-      "linkedin": "LinkedIn"
+      "linkedin": "LinkedIn",
+      "youtube": "YouTube",
+      "instagram": "Instagram",
+      "awsBuilder": "AWS Builder"
     },
     "copyright": "All rights reserved."
   }

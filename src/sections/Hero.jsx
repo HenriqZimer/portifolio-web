@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import { ChevronDown, FolderGit2, Rocket } from 'lucide-react';
+import { ChevronDown, Rocket } from 'lucide-react';
+import { FaAws, FaGithub, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 import FadeInSection from '../components/FadeInSection';
 import useMountedTranslation from '../hooks/useMountedTranslation';
@@ -59,15 +60,22 @@ const Hero = () => {
       </FadeInSection>
 
       <FadeInSection delay={500}>
-        <div className="flex flex-col sm:flex-row gap-4">
-          <a href="#experiencia" className="px-8 py-3 rounded-lg bg-white text-black font-medium hover:bg-gray-200 transition-colors duration-300 text-sm hover:scale-105 active:scale-95">
-            {mt('hero.ctaHighlights', en.hero.ctaHighlights)}
+        <div className="flex flex-wrap justify-center gap-4">
+          <a href="https://github.com/HenriqZimer" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-lg bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-all duration-300 backdrop-blur-sm text-sm flex items-center justify-center gap-2 hover:scale-105 active:scale-95" title={mt('footer.links.github', en.footer.links.github)} aria-label={mt('footer.links.github', en.footer.links.github)}>
+            <FaGithub className="w-4 h-4 text-white/70" />
+            GitHub
           </a>
-          <a href="https://github.com/HenriqZimer" target="_blank" rel="noopener noreferrer" className="px-8 py-3 rounded-lg bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-all duration-300 backdrop-blur-sm text-sm flex items-center justify-center gap-2 hover:scale-105 active:scale-95 hover:border-blue-500/50" aria-label={mt('hero.ctaGithub', en.hero.ctaGithub)}>
-            <FolderGit2 className="w-4 h-4 group-hover:text-blue-400" /> {mt('hero.ctaGithub', en.hero.ctaGithub)}
+          <a href="https://www.youtube.com/@henriqzimer" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-lg bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-all duration-300 backdrop-blur-sm text-sm flex items-center justify-center gap-2 hover:scale-105 active:scale-95" title={mt('footer.links.youtube', en.footer.links.youtube)} aria-label={mt('footer.links.youtube', en.footer.links.youtube)}>
+            <FaYoutube className="w-4 h-4 text-white/70" />
+            YouTube
           </a>
-          <a href="#contacto" className="px-8 py-3 rounded-lg bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-all duration-300 backdrop-blur-sm text-sm hover:scale-105 active:scale-95" aria-label={mt('hero.ctaContact', en.hero.ctaContact)}>
-            {mt('hero.ctaContact', en.hero.ctaContact)}
+          <a href="https://www.instagram.com/_henriqzimer/" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-lg bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-all duration-300 backdrop-blur-sm text-sm flex items-center justify-center gap-2 hover:scale-105 active:scale-95" title={mt('footer.links.instagram', en.footer.links.instagram)} aria-label={mt('footer.links.instagram', en.footer.links.instagram)}>
+            <FaInstagram className="w-4 h-4 text-white/70" />
+            Instagram
+          </a>
+          <a href="https://builder.aws.com/community/@henriqzimer" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-lg bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-all duration-300 backdrop-blur-sm text-sm flex items-center justify-center gap-2 hover:scale-105 active:scale-95" title={mt('footer.links.awsBuilder', en.footer.links.awsBuilder)} aria-label={mt('footer.links.awsBuilder', en.footer.links.awsBuilder)}>
+            <FaAws className="w-4 h-4 text-white/70" />
+            AWS Builder
           </a>
         </div>
       </FadeInSection>

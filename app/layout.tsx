@@ -50,6 +50,13 @@ export async function generateMetadata(): Promise<Metadata> {
     metadataBase: new URL(SITE_URL),
     title: seo.title,
     description: seo.description,
+    icons: {
+      icon: [
+        { url: "/icon.svg", type: "image/svg+xml" },
+      ],
+      shortcut: ["/icon.svg"],
+      apple: [{ url: "/icon.svg" }],
+    },
     keywords: seo.keywords,
     robots: {
       index: true,
