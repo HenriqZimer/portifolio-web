@@ -1,7 +1,7 @@
 {
   "seo": {
     "specialty": "DevSecOps e SRE",
-    "description": "Henrique Zimermann, profissional focado em DevSecOps e SRE, com experiencia em Cloud, automacao de infraestrutura, observabilidade e arquiteturas resilientes.",
+    "description": "Henrique Zimermann, profissional focado em DevSecOps e SRE, com experiência em Cloud, automação de infraestrutura, observabilidade e arquiteturas resilientes.",
     "keywords": ["Cloud", "DevSecOps", "SRE", "AWS", "Kubernetes", "Terraform", "Observabilidade"]
   },
   "nav": {
@@ -12,7 +12,7 @@
       "certs": "Certs",
       "projects": "Projetos",
       "community": "Comunidade",
-      "contact": "Contacto"
+      "contact": "Contato"
     },
     "language": {
       "switch": "Mudar idioma",
@@ -22,15 +22,15 @@
   },
   "hero": {
     "image": "https://henriqzimer.s3.sa-east-1.amazonaws.com/foto-perfil.jpg",
-    "badge": "AWS Cloud Club Captain @ Univali",
-    "titlePrefix": "Ola, me chamo",
+    "badge": "AWS Cloud Club Captain - Univali",
+    "titlePrefix": "Olá, me chamo",
     "titleName": "Henrique",
-    "descriptionBefore": "Estudante de Ciencia da Computacao e profissional de infraestrutura focado em",
+    "descriptionBefore": "Estudante de Ciência da Computação e profissional de infraestrutura focado em",
     "descriptionStrong": "DevSecOps e SRE",
-    "descriptionAfter": "Meu objetivo e aplicar a orquestracao de containers e conceitos Cloud Native para construir arquiteturas seguras, escalaveis e resilientes.",
+    "descriptionAfter": "Meu objetivo é aplicar a orquestração de containers e conceitos Cloud Native para construir arquiteturas seguras, escaláveis e resilientes.",
     "ctaHighlights": "Ver Destaques",
     "ctaGithub": "GitHub",
-    "ctaContact": "Iniciar Contacto",
+    "ctaContact": "Iniciar Contato",
     "photoAlt": "Fotografia de Henrique Zimermann"
   },
   "skills": {
@@ -87,8 +87,8 @@
     "badgeAlt": "Badge da certificacao {{title}} ({{code}})"
   },
   "projects": {
-    "title": "Projetos Praticos",
-    "description": "Arquiteturas, automacoes e codigos abertos que desenvolvi para resolver problemas reais de infraestrutura.",
+    "title": "Projetos Práticos",
+    "description": "Arquiteturas, automações e códigos abertos que desenvolvi para resolver problemas reais de infraestrutura.",
     "items": [
       {
         "title": "Pipeline CI/CD Serverless",
@@ -108,65 +108,65 @@
     ]
   },
   "community": {
-    "title": "Comunidade e Lideranca",
-    "description": "Acredito na partilha de conhecimento e no poder das comunidades. Atuo ativamente para capacitar a proxima geracao de profissionais de nuvem.",
+    "title": "Comunidade e Liderança",
+    "description": "Acredito na partilha de conhecimento e no poder das comunidades. Atuo ativamente para capacitar a próxima geração de profissionais de nuvem.",
     "cards": [
       {
-        "title": "Fundador Cloud Club",
+        "title": "Fundador AWS Cloud Club Univali",
         "description": "Fundador do 1o AWS Cloud Club do Sul do Brasil na Univali. Organizo eventos e capacito a comunidade estudantil na sua jornada para a nuvem."
       },
       {
-        "title": "Lider Builder AWS",
-        "description": "Lideranca oficial reconhecida no programa Estudantes Builder AWS, engajando talentos e promovendo a cultura de inovacao tecnologica."
+        "title": "Líder Builder AWS",
+        "description": "Liderança oficial reconhecida no programa Estudantes Builder AWS, engajando talentos e promovendo a cultura de inovação tecnológica."
       },
       {
         "title": "Eventos Tech",
-        "description": "Participacao ativa nos maiores eventos e comunidades da area, incluindo The Developer's Conference (TDC), DevOps Days e AWS User Groups."
+        "description": "Participação ativa nos maiores eventos e comunidades da área, incluindo The Developer's Conference (TDC), DevOps Days e AWS User Groups."
       }
     ]
   },
   "experience": {
     "title": "Trajetoria e Destaques",
-    "description": "Minha formacao, experiencias profissionais e atuacao na comunidade.",
+    "description": "Minha formacao, experiências profissionais e atuação na comunidade.",
     "items": [
       {
         "year": "Presente",
         "title": "AWS Cloud Club Captain e Student Leader Builder",
         "company": "Univali",
-        "description": "Atuo como captain no Cloud Club Univali e tambem sou lider estudantil na Univali, gerindo a comunidade academica local, fomentando a cultura de nuvem e organizando mentorias praticas sobre Cloud Computing."
+        "description": "Atuo como Captain no Cloud Club Univali e também sou lider estudantil na Univali, gerindo a comunidade acadêmica local, fomentando a cultura de nuvem."
       },
       {
         "year": "Atualmente",
         "title": "DevSecOps",
         "company": "Fluid API",
-        "description": "Integracao continua de seguranca no ciclo de vida de desenvolvimento de APIs. Foco na automacao de infraestrutura, gestao de pipelines de CI/CD seguros e implementacao de praticas Cloud Native para garantir alta disponibilidade e protecao na nuvem."
+        "description": "Integração continua de segurança no ciclo de vida de desenvolvimento de APIs. Foco na automação de infraestrutura, gestão de pipelines de CI/CD seguros e implementação de práticas Cloud Native para garantir alta disponibilidade e proteção na nuvem."
       },
       {
-        "year": "Formacao",
-        "title": "Ciencia da Computacao",
+        "year": "Formação",
+        "title": "Ciência da Computação",
         "company": "Universidade do Vale do Itajai (UNIVALI)",
-        "description": "Estudante de Ciencia da Computacao, aprofundando conhecimentos em arquitetura de sistemas, algoritmos e engenharia de software."
+        "description": "Estudante de Ciência da Computação, aprofundando conhecimentos em arquitetura de sistemas, algoritmos e engenharia de software."
       },
       {
-        "year": "Automacao",
-        "title": "Projetos de Infraestrutura e Eficiencia",
+        "year": "Automação",
+        "title": "Projetos de Infraestrutura e Eficiência",
         "company": "Projetos Praticos",
-        "description": "Desenvolvimento de projetos focados em Docker Swarm, Cloudflare Zero Trust e criacao de scripts avancados em PowerShell e Bash para reduzir tarefas manuais operacionais."
+        "description": "Desenvolvimento de projetos focados em Docker Swarm, Cloudflare Zero Trust e criação de scripts avançados em PowerShell e Bash para reduzir tarefas manuais operacionais."
       }
     ]
   },
   "languages": {
     "title": "Idiomas e Comunicacao",
-    "description": "Capacidade operacional para colaboracao global e consumo nativo de documentacao.",
+    "description": "Capacidade operacional para colaboração global e consumo nativo de documentação.",
     "items": [
       {
         "code": "PT",
-        "name": "Portugues",
+        "name": "Português",
         "level": "Nativo"
       },
       {
         "code": "EN",
-        "name": "Ingles",
+        "name": "Inglês",
         "level": "Avancado / Tecnico"
       }
     ]
