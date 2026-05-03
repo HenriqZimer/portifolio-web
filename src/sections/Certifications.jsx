@@ -8,6 +8,10 @@ import en from '../locales/en.json';
 
 const certAssets = [
   {
+    badgeUrl: 'https://images.credly.com/size/340x340/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png',
+    link: 'https://www.credly.com/badges/26f3ed39-2586-4658-9234-b5aab8449195'
+  },
+  {
     badgeUrl: 'https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png',
     link: 'https://www.credly.com/badges/c0a133ca-557a-4c9d-ba13-84b8c26e0a4f/public_url'
   },

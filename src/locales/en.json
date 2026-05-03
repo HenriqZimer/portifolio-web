@@ -68,6 +68,10 @@
     "description": "Official validation of my skills across the top cloud providers in the market.",
     "items": [
       {
+        "title": "AWS Certified Solutions Architect – Associate",
+        "code": "SAA-C03"
+      },
+      {
         "title": "AWS Certified Cloud Practitioner",
         "code": "CLF-C02"
       },
