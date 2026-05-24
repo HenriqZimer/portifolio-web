@@ -24,6 +24,10 @@ const certAssets = [
     link: 'https://www.credly.com/badges/8773fb0b-94a5-4a1e-9247-0a62cd83e954/public_url'
   },
   {
+    badgeUrl: 'https://images.credly.com/size/680x680/images/44994cda-b5b0-44cb-9a6d-d29b57163073/image.png',
+    link: 'https://www.credly.com/earner/earned/badge/f1b0326e-21cb-4994-80a5-3cd8ecd8e384'
+  },
+  {
     badgeUrl: 'https://images.credly.com/images/6e546fd3-414b-4396-9b91-2b5cf7accedf/OCI25FNDCFAV1_cached_image_20250926-30-gc8qc8.png',
     link: 'https://catalog-education.oracle.com/ords/certview/sharebadge?id=940F36B32BA531E98EE8D9A5C1B99E42EC8B5AFDC558E21B20C31D9FC2E5D9FB'
   }
