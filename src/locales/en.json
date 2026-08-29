@@ -29,6 +29,7 @@
     "descriptionStrong": "DevSecOps and SRE",
     "descriptionAfter": "My goal is to apply container orchestration and Cloud Native concepts to build secure, scalable, and resilient architectures.",
     "ctaHighlights": "View Highlights",
+    "ctaCv": "Download CV",
     "ctaGithub": "GitHub",
     "ctaContact": "Start Contact",
     "photoAlt": "Photo of Henrique Zimermann"
@@ -135,6 +136,13 @@
         "url": "https://github.com/HenriqZimer/ansible-playbooks"
       }
     ]
+  },
+  "githubActivity": {
+    "title": "GitHub Activity",
+    "description": "Live stats generated from my public GitHub profile.",
+    "statsAlt": "Henrique Zimermann's GitHub stats",
+    "langsAlt": "Most used languages by Henrique Zimermann on GitHub",
+    "cta": "View full profile"
   },
   "community": {
     "title": "Community and Leadership",

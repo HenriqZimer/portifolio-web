@@ -29,6 +29,7 @@
     "descriptionStrong": "DevSecOps e SRE",
     "descriptionAfter": "Meu objetivo é aplicar a orquestração de containers e conceitos Cloud Native para construir arquiteturas seguras, escaláveis e resilientes.",
     "ctaHighlights": "Ver Destaques",
+    "ctaCv": "Baixar CV",
     "ctaGithub": "GitHub",
     "ctaContact": "Iniciar Contato",
     "photoAlt": "Fotografia de Henrique Zimermann"
@@ -135,6 +136,13 @@
         "url": "https://github.com/HenriqZimer/ansible-playbooks"
       }
     ]
+  },
+  "githubActivity": {
+    "title": "Atividade no GitHub",
+    "description": "Estatísticas geradas em tempo real a partir do meu perfil público no GitHub.",
+    "statsAlt": "Estatísticas do GitHub de Henrique Zimermann",
+    "langsAlt": "Linguagens mais utilizadas por Henrique Zimermann no GitHub",
+    "cta": "Ver perfil completo"
   },
   "community": {
     "title": "Comunidade e Liderança",

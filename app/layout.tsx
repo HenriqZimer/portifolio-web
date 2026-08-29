@@ -69,23 +69,47 @@ export async function generateMetadata(): Promise<Metadata> {
       siteName: seo.siteName,
       type: "website",
       locale: locale === "pt" ? "pt_BR" : "en_US",
-      images: [
-        {
-          url: "https://github.com/HenriqZimer.png",
-          width: 512,
-          height: 512,
-          alt: localeDict[locale].hero.photoAlt,
-        },
-      ],
     },
     twitter: {
       card: "summary_large_image",
       title: seo.title,
       description: seo.description,
-      images: ["https://github.com/HenriqZimer.png"],
     },
   };
 }
+
+const PERSON_JSON_LD = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Henrique Zimermann",
+  url: SITE_URL,
+  image: "https://github.com/HenriqZimer.png",
+  jobTitle: "DevSecOps e SRE",
+  worksFor: {
+    "@type": "Organization",
+    name: "Fluid API",
+  },
+  alumniOf: {
+    "@type": "CollegeOrUniversity",
+    name: "Universidade do Vale do Itajaí (UNIVALI)",
+  },
+  knowsAbout: [
+    "AWS",
+    "Kubernetes",
+    "Terraform",
+    "DevSecOps",
+    "Site Reliability Engineering",
+    "Cloud Computing",
+    "Observabilidade",
+  ],
+  sameAs: [
+    "https://github.com/HenriqZimer",
+    "https://linkedin.com/in/henrique-zimermann",
+    "https://www.youtube.com/@henriqzimer",
+    "https://www.instagram.com/_henriqzimer/",
+    "https://builder.aws.com/community/@henriqzimer",
+  ],
+};
 
 export default async function RootLayout({
   children,
@@ -104,6 +128,10 @@ export default async function RootLayout({
       <body suppressHydrationWarning className="min-h-full flex flex-col">
         {children}
         <Analytics />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSON_JSON_LD) }}
+        />
       </body>
     </html>
   );

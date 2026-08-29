@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { ChevronDown, Rocket } from 'lucide-react';
+import { ChevronDown, Download, Rocket } from 'lucide-react';
 import { FaAws, FaGithub, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 import FadeInSection from '../components/FadeInSection';
@@ -61,6 +61,10 @@ const Hero = () => {
 
       <FadeInSection delay={500}>
         <div className="flex flex-wrap justify-center gap-4">
+          <a href="/cv/henrique-zimermann-cv.pdf" download className="px-6 py-3 rounded-lg bg-blue-500/15 border border-blue-400/30 text-white font-medium hover:bg-blue-500/25 transition-all duration-300 backdrop-blur-sm text-sm flex items-center justify-center gap-2 hover:scale-105 active:scale-95" title={mt('hero.ctaCv', en.hero.ctaCv)} aria-label={mt('hero.ctaCv', en.hero.ctaCv)}>
+            <Download className="w-4 h-4 text-blue-300" />
+            {mt('hero.ctaCv', en.hero.ctaCv)}
+          </a>
           <a href="https://github.com/HenriqZimer" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-lg bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-all duration-300 backdrop-blur-sm text-sm flex items-center justify-center gap-2 hover:scale-105 active:scale-95" title={mt('footer.links.github', en.footer.links.github)} aria-label={mt('footer.links.github', en.footer.links.github)}>
             <FaGithub className="w-4 h-4 text-white/70" />
             GitHub
