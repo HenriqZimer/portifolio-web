@@ -34,7 +34,7 @@ const Footer = () => {
             </a>
           </FadeInSection>
           <FadeInSection delay={400}>
-            <a href="https://www.youtube.com/@henriqzimer" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white/5 border border-white/15 flex items-center justify-center text-white/70 hover:text-[#FF0000] hover:bg-[#FF0000]/20 hover:border-[#FF0000]/55 hover:-translate-y-2 hover:shadow-[0_0_15px_rgba(255,0,0,0.45)] transition-all duration-300" title={mt('footer.links.youtube', en.footer.links.youtube)} aria-label={mt('footer.links.youtube', en.footer.links.youtube)}>
+            <a href="https://www.youtube.com/@henriqzimer?sub_confirmation=1" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white/5 border border-white/15 flex items-center justify-center text-white/70 hover:text-[#FF0000] hover:bg-[#FF0000]/20 hover:border-[#FF0000]/55 hover:-translate-y-2 hover:shadow-[0_0_15px_rgba(255,0,0,0.45)] transition-all duration-300" title={mt('footer.links.youtube', en.footer.links.youtube)} aria-label={mt('footer.links.youtube', en.footer.links.youtube)}>
               <FaYoutube className="w-5 h-5" />
             </a>
           </FadeInSection>

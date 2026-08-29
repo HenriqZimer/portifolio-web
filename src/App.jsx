@@ -3,10 +3,12 @@
 import './i18n';
 
 import StarryBackground from './components/StarryBackground';
+import CaseStudy from './sections/CaseStudy';
 import Certifications from './sections/Certifications';
 import Community from './sections/Community';
 import Experience from './sections/Experience';
 import Footer from './sections/Footer';
+import GithubActivity from './sections/GithubActivity';
 import Hero from './sections/Hero';
 import Languages from './sections/Languages';
 import Nav from './sections/Nav';
@@ -23,6 +25,8 @@ export default function App() {
         <Skills />
         <Certifications />
         <Projects />
+        <CaseStudy />
+        <GithubActivity />
         <Community />
         <Experience />
         <Languages />

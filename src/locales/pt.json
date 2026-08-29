@@ -22,13 +22,14 @@
   },
   "hero": {
     "image": "https://henriqzimer.s3.sa-east-1.amazonaws.com/foto-perfil.jpg",
-    "badge": "AWS Cloud Club Captain - Univali",
+    "badge": "Líder AWS Student Builder Group - Univali",
     "titlePrefix": "Olá, me chamo",
     "titleName": "Henrique",
     "descriptionBefore": "Estudante de Ciência da Computação e profissional de infraestrutura focado em",
     "descriptionStrong": "DevSecOps e SRE",
     "descriptionAfter": "Meu objetivo é aplicar a orquestração de containers e conceitos Cloud Native para construir arquiteturas seguras, escaláveis e resilientes.",
     "ctaHighlights": "Ver Destaques",
+    "ctaCv": "Baixar CV",
     "ctaGithub": "GitHub",
     "ctaContact": "Iniciar Contato",
     "photoAlt": "Fotografia de Henrique Zimermann"
@@ -43,7 +44,7 @@
       },
       "containers": {
         "title": "Containerização e IaC",
-        "items": ["Docker e Docker Swarm", "Kubernetes", "Helm", "Terraform"]
+        "items": ["Docker e Docker Swarm", "Kubernetes", "Helm", "ArgoCD (GitOps)", "Terraform"]
       },
       "observability": {
         "title": "Observabilidade e SRE",
@@ -99,33 +100,89 @@
     "description": "Arquiteturas, automações e códigos abertos que desenvolvi para resolver problemas reais de infraestrutura.",
     "items": [
       {
-        "title": "Pipeline CI/CD Serverless",
-        "description": "Construcao de uma pipeline de integracao e entrega continua (CI/CD) utilizando GitHub Actions, efetuando o deploy automatizado para servicos AWS.",
-        "tags": ["AWS", "GitHub Actions", "Docker"]
+        "title": "Homelab Kubernetes com GitOps (ArgoCD)",
+        "description": "Cluster Kubernetes homelab operado via GitOps, com ArgoCD sincronizando entregas automatizadas de aplicacoes e infraestrutura.",
+        "tags": ["Kubernetes", "ArgoCD", "GitOps"],
+        "url": "https://github.com/HenriqZimer/argocd-k8s-homelab"
       },
       {
-        "title": "Infraestrutura como Codigo (IaC)",
-        "description": "Provisionamento automatizado de infraestrutura cloud com Terraform e configuracao de servidores utilizando scripts Ansible para padronizacao.",
-        "tags": ["Terraform", "Ansible", "Cloud"]
+        "title": "Helm Charts para Apps Self-Hosted",
+        "description": "Colecao de Helm charts para publicar aplicacoes self-hosted (emuladores, RomM e outras) como desktops completos no navegador via KasmVNC em Kubernetes.",
+        "tags": ["Helm", "Kubernetes", "KasmVNC"],
+        "url": "https://github.com/HenriqZimer?tab=repositories&q=helm-chart"
       },
       {
-        "title": "Stack de Observabilidade SRE",
-        "description": "Implementacao de monitorizacao proativa de aplicacoes e infraestrutura com Prometheus e Grafana, focado na definicao de SLIs e SLOs.",
-        "tags": ["Prometheus", "Grafana", "Linux"]
+        "title": "Infraestrutura Docker Swarm para Homelab",
+        "description": "Infraestrutura self-hosted em Docker Swarm pronta para producao, com servicos enterprise, armazenamento centralizado e acesso remoto seguro.",
+        "tags": ["Docker Swarm", "Homelab", "Infra"],
+        "url": "https://github.com/HenriqZimer/docker-swarm-homelab-infrastructure"
+      },
+      {
+        "title": "Jenkins Shared Libraries",
+        "description": "Colecao de bibliotecas reutilizaveis para pipelines Jenkins, cobrindo build de containers, scanning de seguranca, deploys e suporte multi-linguagem.",
+        "tags": ["Jenkins", "CI/CD", "Security"],
+        "url": "https://github.com/HenriqZimer/jenkins-shared-libraries"
+      },
+      {
+        "title": "Provisionamento de Cluster EKS com Terraform",
+        "description": "Provisionamento de cluster Amazon EKS como codigo, utilizando Terraform para padronizar e automatizar o ambiente Kubernetes na AWS.",
+        "tags": ["Terraform", "AWS", "EKS"],
+        "url": "https://github.com/HenriqZimer/eks-terraform"
+      },
+      {
+        "title": "Playbooks Ansible para Automacao",
+        "description": "Playbooks Ansible para configuracao e automacao de servidores, padronizando ambientes e reduzindo tarefas manuais operacionais.",
+        "tags": ["Ansible", "Automacao", "Linux"],
+        "url": "https://github.com/HenriqZimer/ansible-playbooks"
       }
     ]
+  },
+  "caseStudy": {
+    "title": "Estudo de Caso: Homelab Kubernetes com GitOps",
+    "description": "Um mergulho na arquitetura real por trás do argocd-k8s-homelab, o projeto mais completo do meu GitHub.",
+    "repo": "argocd-k8s-homelab",
+    "cta": "Ver repositório completo",
+    "points": [
+      {
+        "title": "Infraestrutura Base",
+        "description": "Cluster Kubernetes rodando Talos Linux sobre Proxmox, com toda a infraestrutura definida de forma declarativa."
+      },
+      {
+        "title": "GitOps no padrão App-of-Apps",
+        "description": "ArgoCD gerencia o cluster inteiro com sync-waves organizando a instalação em 7 fases, da configuração de namespace ao backup."
+      },
+      {
+        "title": "Gestão de Segredos com Vault",
+        "description": "HashiCorp Vault centraliza credenciais, com seeding automatizado via scripts de bootstrap — nenhum segredo fica hardcoded nos manifests."
+      },
+      {
+        "title": "Rede, Observabilidade e Segurança",
+        "description": "MetalLB e Traefik cuidam de rede e ingress, cert-manager do TLS, kube-prometheus-stack da observabilidade, e Falco com Kyverno reforçam segurança em runtime e políticas."
+      },
+      {
+        "title": "Escalabilidade e Autocura",
+        "description": "Karpenter e KEDA escalam a infraestrutura sob demanda, enquanto Velero e MinIO garantem backup e disaster recovery. A reconciliação contínua mantém o cluster sempre alinhado ao Git."
+      }
+    ]
+  },
+  "githubActivity": {
+    "title": "Atividade no GitHub",
+    "description": "Estatísticas geradas em tempo real a partir do meu perfil público no GitHub.",
+    "statsAlt": "Estatísticas do GitHub de Henrique Zimermann",
+    "langsAlt": "Linguagens mais utilizadas por Henrique Zimermann no GitHub",
+    "cta": "Ver perfil completo"
   },
   "community": {
     "title": "Comunidade e Liderança",
     "description": "Acredito na partilha de conhecimento e no poder das comunidades. Atuo ativamente para capacitar a próxima geração de profissionais de nuvem.",
     "cards": [
       {
-        "title": "Fundador AWS Cloud Club Univali",
-        "description": "Fundador do 1o AWS Cloud Club do Sul do Brasil na Univali. Organizo eventos e capacito a comunidade estudantil na sua jornada para a nuvem."
+        "title": "Líder AWS Student Builder Group",
+        "description": "Lidero o AWS Student Builder Group na Univali, organizando eventos e capacitando a comunidade estudantil na sua jornada para a nuvem."
       },
       {
-        "title": "Líder Estudantil Builder AWS",
-        "description": "Liderança oficial reconhecida no programa Estudantes Builder AWS, engajando talentos e promovendo a cultura de inovação tecnológica."
+        "title": "AWS Student Campus Builder",
+        "description": "Participação ativa no programa AWS Student Campus Builder, engajando talentos e promovendo a cultura de inovação tecnológica entre estudantes."
       },
       {
         "title": "Eventos Tech",
@@ -139,9 +196,9 @@
     "items": [
       {
         "year": "Presente",
-        "title": "AWS Cloud Club Captain e Student Leader Builder",
+        "title": "Líder AWS Student Builder Group",
         "company": "Univali",
-        "description": "Atuo como Captain no Cloud Club Univali e também sou lider estudantil na Univali, gerindo a comunidade acadêmica local, fomentando a cultura de nuvem."
+        "description": "Lidero o AWS Student Builder Group na Univali e participo ativamente do AWS Student Campus Builder, gerindo a comunidade acadêmica local e fomentando a cultura de nuvem."
       },
       {
         "year": "Atualmente",
