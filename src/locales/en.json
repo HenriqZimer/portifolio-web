@@ -137,6 +137,34 @@
       }
     ]
   },
+  "caseStudy": {
+    "title": "Case Study: Kubernetes Homelab with GitOps",
+    "description": "A deep dive into the real architecture behind argocd-k8s-homelab, the most complete project on my GitHub.",
+    "repo": "argocd-k8s-homelab",
+    "cta": "View full repository",
+    "points": [
+      {
+        "title": "Base Infrastructure",
+        "description": "Kubernetes cluster running Talos Linux on top of Proxmox, with the entire infrastructure defined declaratively."
+      },
+      {
+        "title": "App-of-Apps GitOps Pattern",
+        "description": "ArgoCD manages the whole cluster, with sync-waves organizing the install order across 7 phases, from namespace setup to backup."
+      },
+      {
+        "title": "Secret Management with Vault",
+        "description": "HashiCorp Vault centralizes credentials, with automated seeding via bootstrap scripts — no secret is hardcoded in the manifests."
+      },
+      {
+        "title": "Networking, Observability & Security",
+        "description": "MetalLB and Traefik handle networking/ingress, cert-manager handles TLS, kube-prometheus-stack covers observability, and Falco with Kyverno enforce runtime security and policy."
+      },
+      {
+        "title": "Scalability & Self-Healing",
+        "description": "Karpenter and KEDA scale infrastructure on demand, while Velero and MinIO provide backup and disaster recovery. Continuous reconciliation keeps the cluster always aligned with Git."
+      }
+    ]
+  },
   "githubActivity": {
     "title": "GitHub Activity",
     "description": "Live stats generated from my public GitHub profile.",

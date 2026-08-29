@@ -3,6 +3,7 @@
 import './i18n';
 
 import StarryBackground from './components/StarryBackground';
+import CaseStudy from './sections/CaseStudy';
 import Certifications from './sections/Certifications';
 import Community from './sections/Community';
 import Experience from './sections/Experience';
@@ -24,6 +25,7 @@ export default function App() {
         <Skills />
         <Certifications />
         <Projects />
+        <CaseStudy />
         <GithubActivity />
         <Community />
         <Experience />

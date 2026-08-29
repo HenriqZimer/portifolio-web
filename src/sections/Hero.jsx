@@ -69,7 +69,7 @@ const Hero = () => {
             <FaGithub className="w-4 h-4 text-white/70" />
             GitHub
           </a>
-          <a href="https://www.youtube.com/@henriqzimer" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-lg bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-all duration-300 backdrop-blur-sm text-sm flex items-center justify-center gap-2 hover:scale-105 active:scale-95" title={mt('footer.links.youtube', en.footer.links.youtube)} aria-label={mt('footer.links.youtube', en.footer.links.youtube)}>
+          <a href="https://www.youtube.com/@henriqzimer?sub_confirmation=1" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-lg bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-all duration-300 backdrop-blur-sm text-sm flex items-center justify-center gap-2 hover:scale-105 active:scale-95" title={mt('footer.links.youtube', en.footer.links.youtube)} aria-label={mt('footer.links.youtube', en.footer.links.youtube)}>
             <FaYoutube className="w-4 h-4 text-white/70" />
             YouTube
           </a>
